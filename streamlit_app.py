@@ -234,12 +234,22 @@ def page_settings():
 
 def page_about():
     st.title("About FLIP IT")
-    st.write(
-        "Built with Python, Streamlit and Pillow.\n\n"
-        "Fair by design: every flip uses Python's random module, HEADS and TAILS "
-        "are equally likely, and each flip is independent of all earlier flips. "
-        "The result is decided before the animation starts; the animation only "
-        "reveals it.")
+    st.write("""
+Built with Python, Streamlit and Pillow.
+
+**Fair by design:** every flip uses Python's random module, HEADS and TAILS
+are equally likely, and each flip is independent of all earlier flips.
+The result is decided before the animation starts; the animation only reveals it.
+
+**Why I built this**
+
+Sometimes I get confused when choosing between two options. Actually, this
+happens most of the time. When I have to pick one and have no clue which is
+best for me, I decide by tossing a coin. Yes, Heads or Tails.
+
+But I can't always find or carry a coin with me, for many reasons. So I built
+this to solve my own problem.
+""")
     st.divider()
     st.caption("DEVELOPED BY")
     st.subheader(DEVELOPER_NAME)
